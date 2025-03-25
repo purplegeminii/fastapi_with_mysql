@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS todo_db;
+CREATE DATABASE todo_db;
+USE todo_db;
+
+CREATE TABLE todo (
+	`item_id` INT PRIMARY KEY AUTO_INCREMENT,
+    `todotext` VARCHAR(255),
+    `is_done` BOOLEAN DEFAULT FALSE
+);
